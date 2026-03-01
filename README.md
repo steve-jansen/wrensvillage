@@ -1,2 +1,2 @@
 # wrensvillage
-Static website for https://wrensvillage.com
+Static website for [Wren's Village](https://wrensvillage.com)

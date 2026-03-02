@@ -1,0 +1,27 @@
+{
+  "name": "wrensvillage",
+  "version": "1.0.0",
+  "description": "Static website for [Wren's Village](https://wrensvillage.com)",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/steve-jansen/wrensvillage.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/steve-jansen/wrensvillage/issues"
+  },
+  "homepage": "https://github.com/steve-jansen/wrensvillage#readme",
+  "dependencies": {
+    "puppeteer": "^24.37.5"
+  }
+}

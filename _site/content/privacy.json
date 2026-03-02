@@ -1,0 +1,31 @@
+{
+  "url": "https://www.wrensvillage.com/privacy",
+  "title": "404 - Page Not Found",
+  "metaDesc": "",
+  "headings": [
+    {
+      "level": "H1",
+      "text": "404"
+    },
+    {
+      "level": "H3",
+      "text": "Page not found"
+    }
+  ],
+  "paragraphs": [],
+  "links": [
+    {
+      "text": "Back to homepage",
+      "href": "/",
+      "ariaLabel": ""
+    }
+  ],
+  "buttons": [],
+  "images": [],
+  "bgImages": [],
+  "fontFamilies": [
+    "Roboto, \"Helvetica Neue\", Arial, sans-serif"
+  ],
+  "fontFaceUrls": [],
+  "bodyText": "404\nPage not found\nBack to homepage"
+}

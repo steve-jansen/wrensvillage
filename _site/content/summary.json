@@ -1,0 +1,72 @@
+{
+  "extractedAt": "2026-03-02T00:02:51.404Z",
+  "pages": [
+    {
+      "slug": "home",
+      "url": "https://www.wrensvillage.com/",
+      "title": "Supporting Families & Fighting Cancer | Wren’s Village",
+      "headingCount": 11,
+      "imageCount": 20,
+      "fontFamilies": [
+        "Inter, helvetica, arial, sans-serif",
+        "Larsseit",
+        "Arial",
+        "Quicksand",
+        "-apple-system, \"system-ui\", \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\""
+      ]
+    },
+    {
+      "slug": "our-impact",
+      "url": "https://www.wrensvillage.com/our-impact",
+      "title": "Support for Families Fighting Childhood Cancer | Wren’s Village",
+      "headingCount": 23,
+      "imageCount": 38,
+      "fontFamilies": [
+        "Inter, helvetica, arial, sans-serif",
+        "Larsseit",
+        "Arial",
+        "Quicksand",
+        "-apple-system, \"system-ui\", \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\""
+      ]
+    },
+    {
+      "slug": "donate",
+      "url": "https://www.wrensvillage.com/product/donate-to-our-cause-/21",
+      "title": "Donate to our Cause! | Wren’s Village",
+      "headingCount": 5,
+      "imageCount": 18,
+      "fontFamilies": [
+        "Inter, helvetica, arial, sans-serif",
+        "Larsseit",
+        "Arial",
+        "Quicksand",
+        "-apple-system, \"system-ui\", \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\""
+      ]
+    },
+    {
+      "slug": "sponsor-a-wallet",
+      "url": "https://www.wrensvillage.com/product/sponsor-a-wallet-/28",
+      "title": "Wren’s Wallet | Wren’s Village",
+      "headingCount": 5,
+      "imageCount": 18,
+      "fontFamilies": [
+        "Inter, helvetica, arial, sans-serif",
+        "Larsseit",
+        "Arial",
+        "Quicksand",
+        "-apple-system, \"system-ui\", \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\""
+      ]
+    },
+    {
+      "slug": "privacy",
+      "url": "https://www.wrensvillage.com/privacy",
+      "title": "404 - Page Not Found",
+      "headingCount": 2,
+      "imageCount": 0,
+      "fontFamilies": [
+        "Roboto, \"Helvetica Neue\", Arial, sans-serif"
+      ]
+    }
+  ],
+  "totalImages": 23
+}

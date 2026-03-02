@@ -1,0 +1,23 @@
+=== 404 - Page Not Found ===
+URL: https://www.wrensvillage.com/privacy
+
+--- HEADINGS ---
+H1: 404
+H3: Page not found
+
+--- PARAGRAPHS ---
+
+
+--- LINKS & CTAs ---
+[Back to homepage] → /
+
+--- BUTTONS ---
+
+
+--- FONTS ---
+Roboto, "Helvetica Neue", Arial, sans-serif
+
+--- FULL BODY TEXT ---
+404
+Page not found
+Back to homepage

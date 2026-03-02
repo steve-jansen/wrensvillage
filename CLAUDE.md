@@ -13,9 +13,12 @@ Based on crawling the live site, here's what exists today on `wrensvillage.com`:
 |---|---|---|
 | Home | `/` | Hero, mission statement, call-to-action |
 | Our Impact | `/our-impact` | Programs, family support info |
-| Donate | `/product/donate-to-our-cause-/21` | Donation tiers with Square checkout |
-| Sponsor a Wallet | `/product/sponsor-a-wallet-/28` | $250 care wallet program, Square checkout |
-| Privacy Policy | `/privacy` | Legal/privacy |
+| Our Story | `/our-story` | Wren's diagnosis story, mission, three ways to support |
+| Support | `/support` | Hub page: wallets, merchandise, donations, other ways to help |
+| Donate | `/product/donate-to-our-cause-/21` | Donation tiers with Square checkout (Square product ID: **21**) |
+| Sponsor a Wallet | `/product/sponsor-a-wallet-/28` | $250 care wallet program, Square checkout (Square product ID: **28**) |
+| Contact Us | `/contact-us` | Contact form, mailing address |
+| Privacy Policy | `/privacy-policy` | Legal/privacy (note: URL is `/privacy-policy`, not `/privacy`) |
 
 ### Key Observations
 - **Square CMS renders entirely via JavaScript** — the server returns a minimal HTML shell, and all content is injected client-side. This means you **cannot** simply `wget` or `curl` the site to get usable HTML. You'll need to extract content manually or via a headless browser.
@@ -116,8 +119,10 @@ All page URLs use clean, extensionless paths — the `.html` extension is never 
 |---|---|
 | `https://www.wrensvillage.com/` | `index.html` |
 | `https://www.wrensvillage.com/our-impact` | `our-impact.html` |
+| `https://www.wrensvillage.com/our-story` | `our-story.html` |
 | `https://www.wrensvillage.com/give` | `give/index.html` |
 | `https://www.wrensvillage.com/give/wallet` | `give/wallet.html` |
+| `https://www.wrensvillage.com/contact` | `contact.html` |
 | `https://www.wrensvillage.com/privacy` | `privacy.html` |
 
 This is implemented via a **CloudFront Function** on the primary distribution's `viewer-request` event (see Section 9c). The function appends `.html` to extensionless requests, so `/our-impact` becomes `/our-impact.html` in S3.
@@ -134,12 +139,14 @@ This is implemented via a **CloudFront Function** on the primary distribution's 
 
 ```
 site/
-├── index.html              # Home page         → /
-├── our-impact.html         # Impact page        → /our-impact
+├── index.html              # Home page          → /
+├── our-impact.html         # Impact page         → /our-impact
+├── our-story.html          # Wren's story        → /our-story
+├── contact.html            # Contact form        → /contact
+├── privacy.html            # Privacy policy      → /privacy
 ├── give/
-│   ├── index.html          # Donation page      → /give
-│   └── wallet.html         # Wallet sponsorship → /give/wallet
-├── privacy.html     # Privacy policy     → /privacy
+│   ├── index.html          # Donation hub        → /give
+│   └── wallet.html         # Wallet sponsorship  → /give/wallet
 ├── 404.html                # Custom error page
 ├── assets/
 │   ├── images/             # All downloaded images, logos, photos
@@ -398,6 +405,11 @@ Add a `sitemap.xml` to the site root so search engines can discover all pages:
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.wrensvillage.com/our-story</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.wrensvillage.com/give</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -406,6 +418,11 @@ Add a `sitemap.xml` to the site root so search engines can discover all pages:
     <loc>https://www.wrensvillage.com/give/wallet</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.wrensvillage.com/contact</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://www.wrensvillage.com/privacy</loc>
@@ -539,7 +556,7 @@ In DevTools → Computed Styles, check `font-family` on key elements. If the sit
 - [ ] Add skip link (`<a href="#main-content">Skip to main content</a>`) to every page
 - [ ] Set `<html lang="en">` on every page
 - [ ] Use `<main id="main-content">` for primary content on every page
-- [ ] Build each page: Our Impact, Give, Give/Wallet, Privacy Policy
+- [ ] Build each page: Our Impact, Our Story, Give, Give/Wallet, Contact, Privacy Policy
 - [ ] Add meaningful `alt` text to every image; use `alt=""` for decorative images
 - [ ] Ensure heading hierarchy is logical (`<h1>` → `<h2>` → `<h3>`, no skipped levels)
 - [ ] Use descriptive link text (not "click here")

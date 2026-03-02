@@ -224,7 +224,7 @@ Wren's Village
 Suite A-402
 Fort Mill, SC 29708-7214
 
-> **Note:** The Privacy Policy page lists a different address (1750 HWY 160 West, Suite 101-263, Fort Mill SC 29708). The contact page address is likely current. Verify with the organization before publishing.
+> **Note:** The Privacy Policy page on the live Square site lists an old address (1750 HWY 160 West, Suite 101-263, Fort Mill SC 29708). The correct current address is the one shown here, confirmed by the organization. The extracted privacy policy content has been corrected.
 
 ---
 
@@ -340,7 +340,7 @@ The following require login to the Square Dashboard and cannot be automated:
 | EIN | 83-1475837 |
 | Tax status | 501(c)(3) |
 | Primary email | wrensvillage@icloud.com (site footer) / wrensvillage@gmail.com (wallet coordination) |
-| Mailing address | 2764 Pleasant Road, Suite A-402, Fort Mill, SC 29708-7214 |
+| Mailing address | 2764 Pleasant Road, Suite A-402, Fort Mill, SC 29708-7214 (confirmed current) |
 | Facebook | https://www.facebook.com/wrensvillage |
 | Instagram | https://www.instagram.com/wrensvillage |
 | Privacy policy last updated | October 6, 2023 |
@@ -360,6 +360,6 @@ The following require login to the Square Dashboard and cannot be automated:
 
 1. **Square Dashboard:** Export analytics, transaction history, and email subscriber list
 2. **Square Dashboard:** Create Payment Links for donations, wallet sponsorship, and (optionally) merchandise
-3. **Address discrepancy:** Privacy Policy shows one Fort Mill address; Contact Us shows another — confirm current address with the organization
+3. ~~Address discrepancy~~ — resolved. Correct address is 2764 Pleasant Road, Suite A-402, Fort Mill, SC 29708-7214. Extracted privacy policy content has been corrected.
 4. **Logo file:** Confirm whether the site uses an image logo or text-only. If image, locate/export from Square or brand assets.
 5. **Additional photography:** Screenshots are in `_site/screenshots/` for reference — review against extracted images to confirm all visual assets are captured.
